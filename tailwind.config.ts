@@ -61,6 +61,25 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for our petrol pump dashboard
+				fuel: {
+					primary: '#2A9D8F', // Teal for petrol
+					secondary: '#264653', // Dark blue for diesel
+					light: '#E9F5F3', // Light teal background
+				},
+				energy: {
+					success: '#2A9D8F', // Teal for positive indicators
+					warning: '#E9C46A', // Yellow for warnings
+					danger: '#E76F51', // Orange-red for alerts/danger
+					info: '#457B9D', // Blue for informational elements
+				},
+				neutral: {
+					50: '#F1F0FB', // Light background 
+					100: '#E5DEFF', // Light accent
+					200: '#D3E4FD', // Soft highlight
+					300: '#8E9196', // Medium gray for text
+					900: '#1A1A1A', // Near black for important text
 				}
 			},
 			borderRadius: {
