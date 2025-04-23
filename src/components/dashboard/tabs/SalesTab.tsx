@@ -14,12 +14,8 @@ export function SalesTab({ fuelSalesData }: SalesTabProps) {
         <ChartCard
           title="Fuel Sales Comparison"
           subtitle="Petrol vs Diesel sales (liters)"
-          data={fuelSalesData.map(item => ({
-            name: item.name,
-            value: item.petrol,
-            diesel: item.diesel
-          }))}
-          dataKey="value"
+          data={fuelSalesData}
+          dataKey="petrol"
           type="line"
           color="#2A9D8F"
         />

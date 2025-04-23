@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 export type SalesData = {
@@ -59,14 +58,16 @@ export function useDashboardData() {
     { name: "Sun", value: 5500 },
   ];
 
+  // Fix: Add the required 'value' property to each object in the fuelSalesData array
+  // We'll set value to the sum of petrol and diesel for each day
   const fuelSalesData: SalesData[] = [
-    { name: "Mon", petrol: 1200, diesel: 1800 },
-    { name: "Tue", petrol: 1300, diesel: 1900 },
-    { name: "Wed", petrol: 1100, diesel: 1700 },
-    { name: "Thu", petrol: 1350, diesel: 1850 },
-    { name: "Fri", petrol: 1500, diesel: 2000 },
-    { name: "Sat", petrol: 1600, diesel: 2100 },
-    { name: "Sun", petrol: 1400, diesel: 1950 },
+    { name: "Mon", petrol: 1200, diesel: 1800, value: 3000 },
+    { name: "Tue", petrol: 1300, diesel: 1900, value: 3200 },
+    { name: "Wed", petrol: 1100, diesel: 1700, value: 2800 },
+    { name: "Thu", petrol: 1350, diesel: 1850, value: 3200 },
+    { name: "Fri", petrol: 1500, diesel: 2000, value: 3500 },
+    { name: "Sat", petrol: 1600, diesel: 2100, value: 3700 },
+    { name: "Sun", petrol: 1400, diesel: 1950, value: 3350 },
   ];
 
   const teamMembers: TeamMember[] = [
