@@ -297,6 +297,7 @@ export type Database = {
       equipment_status: "operational" | "maintenance" | "issue"
       fuel_type: "petrol" | "diesel" | "premium_petrol"
       payment_status: "pending" | "completed" | "overdue"
+      shift: "morning" | "evening" | "night"
       shift_type: "morning" | "evening" | "night"
     }
     CompositeTypes: {
@@ -417,6 +418,7 @@ export const Constants = {
       equipment_status: ["operational", "maintenance", "issue"],
       fuel_type: ["petrol", "diesel", "premium_petrol"],
       payment_status: ["pending", "completed", "overdue"],
+      shift: ["morning", "evening", "night"],
       shift_type: ["morning", "evening", "night"],
     },
   },
